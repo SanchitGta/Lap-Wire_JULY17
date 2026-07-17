@@ -1,0 +1,28 @@
+{
+  "name": "lapwire",
+  "version": "1.0.0",
+  "description": "Slack app for triggering and monitoring MindLap laps",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4",
+    "better-sqlite3": "^9",
+    "dotenv": "^16"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7",
+    "@types/jest": "^29",
+    "@types/node": "^20",
+    "jest": "^29",
+    "nodemon": "^3",
+    "ts-jest": "^29",
+    "ts-node": "^10",
+    "typescript": "^5"
+  }
+}
